@@ -2,7 +2,9 @@ import 'package:app_bytebank/screens/dashboard.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(BytebankApp());
+void main() {
+  runApp(BytebankApp());
+}
 
 class BytebankApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -15,11 +17,8 @@ class BytebankApp extends StatelessWidget {
           buttonTheme: ButtonThemeData(
             buttonColor: Colors.blueAccent[700],
             textTheme: ButtonTextTheme.primary,
-          )
-      ),
+          )),
       home: Dashboard(), //Scaffold
     ); //MaterialApp
   }
 }
-
-
